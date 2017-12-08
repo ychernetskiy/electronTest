@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Online shop</title>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="app/index.js"></script>
+  </head>
+  <body>
+        <div ng-controller="ProductsCtrl">
+          <div>{{title}}</div>
+          <ul>
+            <li ng-repeat="product in products">
+              {{product}}
+            </li>
+          </ul>          
+        </div>
+  </body>
+</html>
